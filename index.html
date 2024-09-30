@@ -1,0 +1,71 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <!-- nav bar -->
+    <header>
+      <h2 class="logo">HH</h2>
+      <!-- <div class="header-left-side"> -->
+      <select name="category" class="header-options" id="header-category">
+        <option value="" disabled selected>select category</option>
+        <option value="waifu" id="option-waifu">waifu</option>
+        <option value="blowjob" id="option-blowjob">blowjob</option>
+        <option value="trap" id="option-trap">trap</option>
+        <option value="neko" id="option-neko">neko</option>
+      </select>
+
+      <a href="" class="logout">Logout</a>
+      <img src="./assets/nighticon.png" alt="" class="night-mode-icon" />
+    </header>
+
+    <!-- sign in -->
+    <section>
+      <div class="authentication-container">
+        <h1>Sign In</h1>
+        <form>
+          <input
+            type="text"
+            id="username"
+            class="unInput"
+            placeholder="enter username"
+          />
+          <input
+            type="password"
+            id="password"
+            class="pwInput"
+            placeholder="enter password"
+          />
+          <button class="login-btn">sign in</button>
+        </form>
+      </div>
+    </section>
+
+    <article>
+      <!-- replace with content on fetch -->
+      <div class="article-content-container">
+        <span class="welcome-msg"></span>
+        <br />
+        <select name="body-category" class="body-options" id="body-category">
+          <option value="" disabled selected>select category</option>
+          <option value="waifu" id="option-waifu">waifu</option>
+
+          <option value="blowjob" id="option-blowjob">blowjob</option>
+          <option value="trap" id="option-trap">trap</option>
+          <option value="neko" id="option-neko">neko</option>
+        </select>
+      </div>
+    </article>
+    <script src="app.js"></script>
+  </body>
+</html>
